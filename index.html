@@ -1,73 +1,110 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Jakob Frick resume</title>
+</head>
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Resume by koogle</title>
-  </head>
+<link rel="stylesheet" type="text/css" href="octicons/octicons.css">
+<link rel="stylesheet" type="text/css" href="javascripts/resume.css">
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/koogle/resume">View on GitHub</a>
-    <div class="shell">
+<script type="text/javascript" src="stylesheets/resume.js"></script>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Resume</h1>
-            <h2>Write resumes in HTML</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+<body onload="setupResume()">
+	<!-- Define meta data here -->
+	<r-meta-data>
+		<r-author>Jakob <strong>Frick</strong></r-author>
+		<r-subtitle>Resume</r-subtitle>
+		<r-contact-data>
+			<r-email>jakob.frick@student.hpi.de</r-email>
+			<r-phone>+49-160-91337630</r-phone><br>
+			<r-address>Stahnsdorfer Str. 152c 14482 Potsdam, Germany</r-address>
+		</r-contact-data>
+	</r-meta-data>
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/koogle/resume/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/koogle/resume/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
+	<header>
+		<r-contact-field></r-contact-field>
+	</header>
+	<r-name-field></r-name-field>
 
+	<r-personal-data>
+		<r-entry>22.10.1993<r-content>Born in Überlingen, Germany</r-content></r-entry>
+		<r-entry>Mother<r-content><r-title>Sabine Klein</r-title>Teacher at primary school</r-content></r-entry>
+		<r-entry>Father<r-content><r-title>Bernd Frick</r-title>Master carpenter and diploma engineer in applied computer science</r-content></r-entry>
+	</r-personal-data>
 
-      <span class="banner-fix"></span>
+    <r-section>
+		<r-section-heading>Education</r-section-heading>
+		<r-entry>2000-2004<r-content><r-title>High School, Gymnasium Überlingen, Überlingen, Germany</r-title>Abitur (equivalent to A-Level) with a mark of 1.1<br>Focus courses: Math, German, English, History, Physics, Latin</r-content></r-entry>
+		<r-entry>2013-Present<r-content><r-title>Bachelor of IT-Systems Engineering, Hasso-Plattner Institut, Potsdam, Germany</r-title></r-content></r-entry>
+	</r-seciton>	
+	
+	<r-section>
+		<r-section-heading>Experience</r-section-heading>
+		
+		<r-subsection>
+			<r-subsection-heading>Work</r-subsection-heading>
+			<r-entry>2013-Present<r-content><r-title>Student Research assistent, Hasso-Plattner Insitut, Enterprise Platform and Integration Concepts chair, Potsdam</r-title>Working on the Racktables Project as back- and frontend eveloper. As well as on Database benchmarking.</r-content></r-entry>
+			<r-entry>2014-Present<r-content><r-title>Intern, Bejure, Potsdam</r-title>Technical support for a startup in the process of founding in the field of data elicitation and cloud setup (Amazon AWS).</r-content></r-entry>
+			<r-entry>2011-2012<r-content><r-title>Part time job, Watchee, Überlingen</r-title>Visualization of geo location data in a 3D Web Environment (WebGL).</r-content></r-entry>
+		</r-subsection>
+		<r-subsection>
+			<r-subsection-heading>Commitment</r-subsection-heading>
+		
+			<r-entry>2012-2013<r-content><r-title>Voluntary Service, Tanzania Renewable Energy Association, Dar es Salaam</r-title>Through weltwärts-program funded by the German government I worked as an intern in Dar es Salaam, Tanzania, for one year. The purpose of this program is intercultural exchange and education on climate change. </r-content></r-entry>
+			<r-entry>2013-present<r-content><r-title>German-Tanzanian-Partnership</r-title>I am involved with the organization I went to Tanzania with and conducted several activities like workshops on racism, global learning and the following:
+			<ul>
+			<li><strong>Choosing of the new volunteers</strong>: I worked in the application process and helped pre-select new volunteers</li>
+			<li><strong>Orientation seminar</strong>: I conducted the orientation seminar for our new volunteers in Dar es Salaam.</li>
+			</ul>
+			</r-content></r-entry>
+			<r-entry>2013-present<r-content><r-title>Speaker, Student Club for PR and International Relations, Hasso-Plattner Institut</r-title>I am currently spokesman of our student club which represents the the HPI. I organize our activities such as welcoming visitors at HPI, represent HPI at exhibitions and I liaise schools and other partners of the HPI.</r-content></r-entry>
+			<r-entry>2011-2012<r-content><r-title>Movie project about Jewish history</r-title>I worked in a voluntary movie project about the Jewish inheritance of Überlingen. My field of work covered nearly every part such as research, interviews with historians and witnesses, filming, cut and post-production.</r-content></r-entry>
+			<r-entry>2009{Intern<r-content><r-title>Camphill, Brachenreute</r-title>I worked in the Camphill Facility Brachenreute for half a year, where disabled people live togheter in an open town-like facility.</r-content></r-entry>
+		</r-subsection>
+	</r-section>
 
+	<r-section>
+		<r-section-heading>Projects and competitions</r-section-heading>
+		<r-entry>2014-2015<r-content><r-title>Mechenical Simulation for interactive floor</r-title>In scope of a seminar on designing interactive user systems. Building of an construction-kit like tool for an interactive touch floor that shall  shall combine rapid prototyping and mechanical simulation.</r-content></r-entry>
+		<r-entry>2014<r-content><r-title>Sciene Hack Day, Two day hackathon at Betahaus, Berlin on open science projects</r-title>Received "best science hack" award for our project, Neurorobot.</r-content></r-entry>
+		<r-entry>2013<r-content><r-title>Business Software Database Analysis Visualization</r-title>In scope of a seminar on enterprise software. Built a similarity analysis interpreter and visualization which orders the databases in clusters of parent-child relationsships.</r-content></r-entry>
+		<r-entry>2012<r-content><r-title>Field Robot Event, A robot competition in the field of agriculture for student teams</r-title>Got 3rd place as school team</r-content></r-entry>
+		<r-entry>2011<r-content><r-title>SAP Explore-It competition, School team competition about self-chosen IT project</r-title>Got 1st place with a proof-of-concept for a smart home system with gesture control.</r-content></r-entry>
+	</r-section>
+	<r-section>
+		<r-section-heading>Computer skills</r-section-heading>
+	
+		<r-entry>Advanced<r-content>Java, Android, C++, Javascript</r-content></r-entry>
+		<r-entry>Intermediate<r-content>Python, QT, PHP, C, LaTeX, Linux maintenance</r-content></r-entry>
+		<r-entry>Basic<r-content>Scheme, Prolog, Smalltalk/Squeak, OpenCV, OpenGL, Go</r-content></r-entry>
+	</r-section>
 
-      <section id="main_content">
-        <h1>
-<a id="html-resume" class="anchor" href="#html-resume" aria-hidden="true"><span class="octicon octicon-link"></span></a>HTML Resume</h1>
+	<r-section>
+		<r-section-heading>Languages</r-section-heading>
+	
+		<r-entry>German<r-content>Native language</r-content></r-entry>
+		<r-entry>English<r-content>Conversationally and written fluent, professional experience</r-content></r-entry>
+		<r-entry>Swahili<r-content>Conversationally fluent</r-content></r-entry>
+		<r-entry>Latin<r-content>Six years high school education</r-content></r-entry>
 
-<p>Write a beautiful resume just with HTML. You only need the <em>resume.js</em> and <em>resume.css</em> files and define your document structure. The custom elements care for the styling and alignment. </p>
+	</r-section>
 
-<p>Have fun and check out my <a href="">sample page</a></p>
-      </section>
+	<r-section>
+		<r-section-heading>Interests</r-section-heading>
+		<r-entry>News and global politics</r-entry>
+		<r-entry>History</r-entry>
+		<r-entry>Karate</r-entry>
+		<r-entry>Reading</r-entry>
+	</r-section>
+	
+	<hr>
+	<footer>
+		<r-contact-field></r-contact-field>
+	</footer>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/koogle">koogle</a> can be found on <a href="https://github.com/koogle/resume">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
+</body>
 
-    </div>
-
-    
-  </body>
 </html>
