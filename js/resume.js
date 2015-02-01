@@ -4,12 +4,7 @@ function setupResume () {
 		prototype: Object.create(HTMLButtonElement.prototype),
 		extends: 'div'
 	});
-/*	
-	var EntryElement = document.registerElement('r-entry', {
-		prototype: Object.create(HTMLButtonElement.prototype),
-		extends: 'div'
-	});
-*/	
+		
 	var EmailProto = Object.create(HTMLElement.prototype);
 	EmailProto.createdCallback = function () {
 		// Test if visable
@@ -93,7 +88,6 @@ function setupResume () {
 			this.innerHTML = "<strong>" + this.innerHTML.substring(0, delimiter_pos) + "</strong><i>" + this.innerHTML.slice(delimiter_pos) + "</i>";
 		else	
 			this.innerHTML = "<strong>" + this.innerHTML + "</strong>";
-		console.log("getting called once ?");
 		this.parentNode.insertBefore(document.createElement("br"), this.nextSibling);
 	}
 	
