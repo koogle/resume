@@ -26,6 +26,13 @@ function setupResume () {
 			this.innerHTML = "<span class='octicon octicon-home'></span>\t" + this.innerHTML;
 	}
 	
+	var GithubProto = Object.create(HTMLElement.prototype);
+	GithubProto.createdCallback = function () {
+		// Test if visable
+		if(! (this.offsetParent === null))
+			this.innerHTML = "<span class='octicon octicon-mark-github'></span>\t" + this.innerHTML;
+	}
+	
 	var EmailElement = document.registerElement('r-email', {
 		prototype: EmailProto,
 	});
@@ -36,6 +43,10 @@ function setupResume () {
 	
 	var AddressElement = document.registerElement('r-address', {
 		prototype: AddressProto,
+	});
+	
+	var GithubElement = document.registerElement('r-github', {
+		prototype: GithubProto,
 	});
 	
 	var ContactFieldProto = Object.create(HTMLElement.prototype);
